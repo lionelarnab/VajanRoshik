@@ -1,0 +1,203 @@
+/*CSS Reset*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*CSS Variables*/
+:root{
+    --navbar-height: 60px;
+}
+
+/*Navbar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+/*Navbar image and logo*/
+#logo{
+    margin: 10px 13px;
+}
+#logo img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+    font-family: 'Orelega One', cursive;
+    color: black;
+    display: block;
+    padding: 3px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    background-color: white;
+}
+/*Home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 430px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url(../img/bg3.jpg) no-repeat center center/cover;
+    height: 530px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#home .h-primary{
+    text-align: center;
+    font-family: 'Tapestry', cursive;
+}
+#home p{
+    font-size: 1.5rem;
+    font-weight: 550;
+    font-family: 'Orelega One', cursive;
+}
+/*services*/
+/* utility class */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    margin: 3px 20px;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #dbb2b2;
+}
+#services .box img{
+    height: 160px;
+    width: 170px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Orelega One', cursive;
+}
+.h-primary{
+    font-size: 3.6rem;
+    padding: 10px;
+    font-family: 'Tapestry', cursive;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 10px;
+    font-family: 'Tapestry', cursive;
+}
+/*button*/
+.btn{
+    margin: 20px;
+    padding: 5px 10px;
+    border: 2px solid rgb(39, 39, 207);
+    border-radius: 13px;
+    font-size: 19px;
+    cursor: pointer;
+    background-color: rgb(179, 79, 79);
+}
+.btn:hover{
+    background-color: rgb(115, 95, 95);
+    color: white;
+    font-size: 20px;
+}
+.center{
+    text-align: center;
+}
+/*clients section*/
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 120px;
+}
+.client-items{
+    padding: 20px;
+}
+#client-section{
+   
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background-image: url(../img/bg9.jpg);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/*contact section*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url(../img/contact.jpg) no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Orelega One', cursive;
+}
+/*footer*/
+footer{
+    background-color: #243b7f;
+    color: white;
+    padding: 9px 20px;
+}
